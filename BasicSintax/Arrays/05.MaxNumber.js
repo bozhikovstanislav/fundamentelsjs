@@ -9,6 +9,10 @@ function maxNumbers(arr){
 				break;
 			}else{
 				ismax = element >= arr[i];
+				if(!ismax){
+					break;
+				}
+
 			}
 		}
 		if(ismax){
@@ -28,6 +32,5 @@ function maxNumbers(arr){
 		console.log(output);
 	}
 }
-maxNumbers([1, 4, 3, 2])
-maxNumbers([41, 41, 34, 20])
+maxNumbers([1,14,33,2])
 maxNumbers([27, 19, 42, 2, 13, 45, 48])
